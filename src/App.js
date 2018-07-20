@@ -6,6 +6,13 @@ import './App.css';
 import InputBox from './InputBox';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputMessage: ''
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -16,6 +23,12 @@ class App extends Component {
 
   _handleInput = (text) => {
     // now what do i do?
+    console.log(text);
+
+    // let's save the text to state
+    this.setState({
+      inputMessage: text
+    });
   }
 
 }
