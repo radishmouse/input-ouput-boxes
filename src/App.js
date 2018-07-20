@@ -16,7 +16,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <InputBox />
+        <InputBox
+          handler={this._handleInput}
+        />
       </div>
     );
   }
